@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="uniAppPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.mycompany.uniapp.domain.Course</class>
+    <class>com.mycompany.uniapp.domain.Department</class>
+    <class>com.mycompany.uniapp.domain.Faculty</class>
+    <class>com.mycompany.uniapp.domain.Name</class>
+    <class>com.mycompany.uniapp.domain.Payment</class>
+    <class>com.mycompany.uniapp.domain.Roles</class>
+    <class>com.mycompany.uniapp.domain.Student</class>
+    <class>com.mycompany.uniapp.domain.Subject</class>
+    <class>com.mycompany.uniapp.domain.SubjectCost</class>
+    <class>com.mycompany.uniapp.domain.University</class>
+    <class>com.mycompany.uniapp.domain.Users</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/uniApp"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.user" value="uniApp"/>
+      <property name="eclipselink.ddl-generation" value="create-tables"/>
+    </properties>
+  </persistence-unit>
+</persistence>
